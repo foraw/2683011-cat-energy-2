@@ -2,7 +2,7 @@
 
 * Студент: [Сергей](https://up.htmlacademy.ru/adaptive-individual/2/user/2683011).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-* Сайт: [Курсовой проект «Кэт энерджи»]
+* Сайт: [Курсовой проект «Кэт энерджи»](https://foraw.github.io/2683011-cat-energy-2/).
 
 ---
 
