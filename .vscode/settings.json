@@ -1,6 +1,8 @@
 {
 	"cSpell.language": "en,ru",
-	"editor.fontSize": 16,
+	"editor.fontSize": 14,
 	"editor.renderWhitespace": "all",
-	"editor.tabSize": 3
+	"editor.tabSize": 3,
+	"editor.lineHeight": 1.9,
+	"terminal.integrated.fontFamily": "'JetBrains Mono'"
 }
