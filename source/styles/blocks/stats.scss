@@ -1,0 +1,22 @@
+.stats__term {
+  color: #444444;
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.stats__data {
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.stats__term--additional,
+.stats__data--additional {
+  color: inherit;
+  font-family: $font-primary;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
