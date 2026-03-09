@@ -1,3 +1,17 @@
+.accessories__title {
+  color: var(--color-title);
+  font-size: 24px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}
+
 .accessories__list {
   list-style-type: none;
 }

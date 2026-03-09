@@ -1,8 +1,10 @@
 .button {
-  color: #ffffff;
-  background-color: $color-prime;
-  font-size: 20px;
-  line-height: 26px;
+  color: var(--white-basic);
+  background-color: var(--color-prime);
+  display: inline-block;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;

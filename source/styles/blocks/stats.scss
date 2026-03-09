@@ -1,22 +1,65 @@
+.stats {
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, var(--white-basic) 55%, #eaeaea 55%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: inherit;
+  }
+}
+
+.stats__title {
+  color: var(--black-basic);
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .stats__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .stats__term {
-  color: #444444;
-  font-family: $font-secondary;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .stats__data {
-  font-size: 30px;
-  line-height: 37px;
+  color: var(--black-basic);
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__term--additional,
 .stats__data--additional {
-  color: inherit;
-  font-family: $font-primary;
-  font-size: 20px;
+  color: var(--black-basic);
+  font-family: $font-secondary;
+  font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-}
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
