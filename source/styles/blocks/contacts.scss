@@ -1,14 +1,20 @@
 .contacts__title {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: uppercase;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__info {
-  color: #444444;
-  font-family: $font-secondary;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

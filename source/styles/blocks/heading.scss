@@ -1,5 +1,10 @@
 .heading {
-   font-weight: 400;
-   font-size: 60px;
-   line-height: 60px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }

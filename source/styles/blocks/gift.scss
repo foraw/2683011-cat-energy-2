@@ -1,11 +1,10 @@
 .gift {
-   background-color: $color-prime;
+  background-color: var(--color-prime);
 }
 
 .gift__text {
-   color: #ffffff;
-   font-family: $font-secondary;
-   font-style: normal;
-   font-size: 16px;
-   line-height: 20px;
+  color: var(--white-basic);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
 }

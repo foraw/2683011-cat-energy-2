@@ -1,23 +1,34 @@
 .program {
-   background-color: #f2f2f2;
+  background-color: var(--grey-basic);
 }
 
 .program__title {
-   font-weight: 400;
-   font-size: 36px;
-   line-height: 36px;
-   text-transform: uppercase;
+  color: var(--black-basic);
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.program__text {
-   color: #000000;
+@media (min-width: $tablet-width) {
+  .program__text {
+    color: var(--black-basic);
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .program__button {
-   color: inherit;
-   font-size: 20px;
-   line-height: 30px;
-   text-transform: uppercase;
-   text-decoration: none;
-   text-align: center;
+  color: var(--black-basic);
+  background-color: inherit;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -4,20 +4,45 @@
 
 .card__title {
   color: #222222;
-  font-size: 20px;
-  line-height: 24px;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.card__title--accent {
+  color: #111111;
+}
+
+.card--mini .card__title {
+  line-height: 1;
 }
 
 .card__term,
 .card__description {
-  color: #444444;
-  font-family: $font-secondary;
-  font-size: 16px;
-  line-height: 20px;
+  color: var(--color-text);
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-.card__button {
-  font-size: 16px;
-  line-height: 20px;
+@media (max-width: $mobile-width) {
+  .card--mini .card__description {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
+.card__button--info {
+  color: var(--color-text);
+  background-color: var(--grey-basic);
 }
