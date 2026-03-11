@@ -1,5 +1,15 @@
 .gift {
-  background-color: var(--color-prime);
+  width: 280px;
+  background: linear-gradient(var(--color-prime-85), var(--color-prime-85)), url("../../images/background/gift-bg-mobile@1x.jpg") no-repeat center / contain;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background: no-repeat center;
+    background-image: url("../../icons/gift-logo.svg");
+  }
 }
 
 .gift__text {

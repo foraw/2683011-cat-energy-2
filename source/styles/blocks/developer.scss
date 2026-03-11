@@ -1,6 +1,48 @@
 .developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 34px;
+}
+
+.developer__logo {
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background: #666666;
+    mask: url("../../icons/developer-logo.svg") no-repeat center;
+  }
+}
+
+.developer__logo:hover::before,
+.developer__logo:focus::before {
+  background: var(--color-prime);
+}
+
+.developer__logo:active::before {
+  background: var(--color-prime);
+  opacity: 0.3;
+}
+
+.developer__link {
+  text-decoration: none;
+}
+
+.developer__link span {
   color: var(--color-text);
   font-size: 16px;
   line-height: 20px;
-  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--color-prime);
+  }
+
+  &:active {
+    color: var(--color-prime);
+    opacity: 0.3;
+  }
 }

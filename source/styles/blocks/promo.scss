@@ -1,14 +1,20 @@
 .promo {
-  color: var(--white-basic);
-  background-color: var(--color-prime-85);
+  background: linear-gradient(var(--color-prime-85), var(--color-prime-85)), url("../../images/background/promo-bg-mobile@1x.jpg") no-repeat center / contain;
 
   @media (min-width: $tablet-width) {
-    color: var(--black-basic);
     background: var(--white-basic);
   }
 
   @media (min-width: $desktop-width) {
     background: linear-gradient(to right, var(--white-basic) 50%, var(--color-prime-85) 50%);
+  }
+}
+
+.promo__title, .promo__slogan {
+  color: var(--white-basic);
+
+  @media (min-width: $tablet-width) {
+    color: var(--black-basic);
   }
 }
 
