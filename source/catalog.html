@@ -16,7 +16,12 @@
   <header class="header">
     <nav class="nav">
       <a class="logo" href="index.html" aria-current="page">
-        <img class="logo__img" width="202" height="59" src="images/logo/logo-desktop.svg" alt="Логотип компании Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-big.svg" width="202" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-mean.svg" width="174" height="50" type="image/svg+xml">
+          <img class="logo__img" src="images/logo-small.svg" width="33" height="38" alt="Логотип компании Cat Energy">
+        </picture>
+        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип компании Cat Energy">
       </a>
       <button class="button-toggle" type="button">
         <span class="visually-hidden">Переключение меню</span>
@@ -281,7 +286,7 @@
   </main>
   <footer class="footer">
     <a class="logo logo--mini" href="index.html" aria-current="page">
-      <img class="logo__img" width="128" height="24" src="images/logo/logo-text.svg" alt="Текстовый логотип компании Cat Energy">
+      <img class="logo__img" width="128" height="24" src="images/logo-text-big.svg" alt="Текстовый логотип компании Cat Energy">
     </a>
     <section class="socials">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -303,9 +308,13 @@
         </li>
       </ul>
     </section>
-    <a class="developer" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Pазработчик сайта">
-      <span class="developer__title">HTML Academy</span>
-    </a>
+    <div class="developer">
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span>HTML Academy</span>
+      </a>
+      <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип разработчика сайта">
+      </a>
+    </div>
   </footer>
 </body>
 

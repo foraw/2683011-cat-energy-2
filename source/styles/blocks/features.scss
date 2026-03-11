@@ -3,13 +3,10 @@
 }
 
 .features__title {
-  color: var(--black-basic);
-  font-size: 36px;
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
   }
 }
 
@@ -17,5 +14,45 @@
   .features__text {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.features__item {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: var(--color-prime) no-repeat center;
+    background-size: 30px 32px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.features__item--health {
+  &::before {
+    background-image: url("../../icons/leaf.svg");
+  }
+}
+
+.features__item--easy {
+  &::before {
+    background-image: url("../../icons/liquid.svg");
+  }
+}
+
+.features__item--everyday {
+  &::before {
+    background-image: url("../../icons/cutlery.svg");
+  }
+}
+
+.features__item--time {
+  &::before {
+    background-image: url("../../icons/watch.svg");
   }
 }
