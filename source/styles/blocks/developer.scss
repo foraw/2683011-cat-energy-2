@@ -4,6 +4,10 @@
   align-items: center;
   width: 280px;
   height: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .developer__logo {
@@ -19,11 +23,11 @@
 
 .developer__logo:hover::before,
 .developer__logo:focus::before {
-  background: var(--color-prime);
+  background: var(--color-prime, #68b738);
 }
 
 .developer__logo:active::before {
-  background: var(--color-prime);
+  background: var(--color-prime, #68b738);
   opacity: 0.3;
 }
 
@@ -32,17 +36,17 @@
 }
 
 .developer__link span {
-  color: var(--color-text);
+  color: var(--color-text, #444444);
   font-size: 16px;
   line-height: 20px;
 
   &:hover,
   &:focus {
-    color: var(--color-prime);
+    color: var(--color-prime, #68b738);
   }
 
   &:active {
-    color: var(--color-prime);
+    color: var(--color-prime, #68b738);
     opacity: 0.3;
   }
 }

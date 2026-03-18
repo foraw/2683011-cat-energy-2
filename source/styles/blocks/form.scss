@@ -1,5 +1,5 @@
 .form__input {
-  color: var(--color-text);
+  color: var(--color-text, #444444);
   font-family: inherit;
   font-size: 20px;
   line-height: 30px;

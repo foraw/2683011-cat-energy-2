@@ -2,11 +2,44 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, var(--white-basic) 55%, #eaeaea 55%);
+    background: linear-gradient(to bottom, var(--white-basic, #ffffff) 55%, #eaeaea 55%);
   }
 
   @media (min-width: $desktop-width) {
     background: inherit;
+  }
+}
+
+.stats__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.stats__description-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.stats__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    gap: 55px 42px;
+    width: 366px;
   }
 }
 
@@ -25,7 +58,36 @@
   }
 }
 
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+}
+
+.stats__item--additional {
+  flex-direction: row;
+  width: 188px;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 327px;
+  }
+}
+
 .stats__term {
+  order: 2;
   font-size: 12px;
   line-height: 12px;
 
@@ -36,11 +98,12 @@
 }
 
 .stats__data {
-  color: var(--black-basic);
+  color: var(--black-basic, #000000);
   font-family: $font-secondary;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -50,7 +113,7 @@
 
 .stats__term--additional,
 .stats__data--additional {
-  color: var(--black-basic);
+  color: var(--black-basic, #000000);
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 20px;
@@ -59,4 +122,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
+
+.stats__term--additional {
+  order: 0;
+}
+
+.stats__slide-wrapper {
+  display: flex;
+  flex-direction: column;
 }

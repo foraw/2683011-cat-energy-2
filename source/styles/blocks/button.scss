@@ -1,6 +1,6 @@
 .button {
-  color: var(--white-basic);
-  background-color: var(--color-prime);
+  color: var(--white-basic, #ffffff);
+  background-color: var(--color-prime, #68b738);
   display: inline-block;
   font-family: $font-secondary;
   font-size: 16px;

@@ -1,0 +1,8 @@
+.button-toggle {
+  width: 24px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

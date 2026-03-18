@@ -1,5 +1,5 @@
 .heading {
-  color: var(--color-title);
+  color: var(--color-title, #000000);
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 36px;

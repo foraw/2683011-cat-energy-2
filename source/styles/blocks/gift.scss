@@ -1,6 +1,6 @@
 .gift {
   width: 280px;
-  background: linear-gradient(var(--color-prime-85), var(--color-prime-85)), url("../../images/background/gift-bg-mobile@1x.jpg") no-repeat center / contain;
+  background: linear-gradient(var(--color-prime-shade, rgba(104, 183, 56, 0.85)), var(--color-prime-shade, rgba(104, 183, 56, 0.85))), url("../../images/background/gift-bg-mobile@1x.jpg") no-repeat center / contain;
 
   &::before {
     content: "";
@@ -13,7 +13,7 @@
 }
 
 .gift__text {
-  color: var(--white-basic);
+  color: var(--white-basic, #ffffff);
   font-style: normal;
   font-size: 16px;
   line-height: 20px;

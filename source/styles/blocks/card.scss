@@ -25,7 +25,7 @@
 
 .card__term,
 .card__description {
-  color: var(--color-text);
+  color: var(--color-text, #444444);
   font-size: 12px;
   line-height: 16px;
 
@@ -35,14 +35,17 @@
   }
 }
 
-@media (max-width: $mobile-width) {
-  .card--mini .card__description {
-    font-size: 14px;
-    line-height: 1;
+.card--mini .card__description {
+  font-size: 14px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
 .card__button--info {
-  color: var(--color-text);
-  background-color: var(--grey-basic);
+  color: var(--color-text, #444444);
+  background-color: var(--grey-basic, #f2f2f2);
 }

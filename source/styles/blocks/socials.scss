@@ -1,7 +1,52 @@
+.socials {
+  display: flex;
+}
+
 .socials__list {
   display: flex;
   gap: 24px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials__link {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background: #666666;
+    mask: no-repeat center;
+  }
+}
+
+.socials__link--vk {
+  &::before {
+    mask-image: url("../../icons/vk.svg");
+  }
+}
+
+.socials__link--youtube {
+  &::before {
+    mask-image: url("../../icons/youtube.svg");
+  }
+}
+
+.socials__link--telegram {
+  &::before {
+    mask-image: url("../../icons/telegram.svg");
+  }
+}
+
+.socials__link:hover::before,
+.socials__link:focus::before {
+  background: var(--color-prime, #68b738);
+}
+
+.socials__link:active::before {
+  background: var(--color-prime, #68b738);
+  opacity: 0.3;
 }
 
 .socials__link {
