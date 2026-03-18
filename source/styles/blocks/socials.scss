@@ -1,7 +1,13 @@
+.socials {
+  display: flex;
+}
+
 .socials__list {
   display: flex;
   gap: 24px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .socials__link {
@@ -35,10 +41,10 @@
 
 .socials__link:hover::before,
 .socials__link:focus::before {
-  background: var(--color-prime);
+  background: var(--color-prime, #68b738);
 }
 
 .socials__link:active::before {
-  background: var(--color-prime);
+  background: var(--color-prime, #68b738);
   opacity: 0.3;
 }

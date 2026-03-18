@@ -1,7 +1,24 @@
+.contacts__description-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 308px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 87px;
+    width: 565px;
+    padding: 60px 80px;
+  }
+}
+
 .contacts__title {
   color: #111111;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

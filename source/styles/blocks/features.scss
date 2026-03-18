@@ -1,5 +1,25 @@
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
 .features__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 37px 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+  }
 }
 
 .features__title {
@@ -18,15 +38,24 @@
 }
 
 .features__item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
+
   &::before {
     content: "";
     display: block;
     width: 60px;
     height: 60px;
-    background: var(--color-prime) no-repeat center;
+    background: #5eaa2f no-repeat center;
     background-size: 30px 32px;
 
     @media (min-width: $tablet-width) {
+      background-color: var(--color-prime, #68b738);
       width: 80px;
       height: 80px;
     }

@@ -1,5 +1,13 @@
-@media (min-width: $tablet-width) {
-  .logo__text {
-    display: none;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
   }
 }

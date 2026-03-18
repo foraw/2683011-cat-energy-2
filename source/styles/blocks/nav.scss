@@ -1,17 +1,31 @@
+.nav {
+  display: flex;
+}
+
 .nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 33px;
+  }
 }
 
 .nav__link {
-  color: var(--black-basic);
+  color: var(--black-basic, #000000);
   font-family: $font-secondary;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
 
-  @media (max-width: $mobile-width) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {

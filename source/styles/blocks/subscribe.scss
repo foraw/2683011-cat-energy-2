@@ -1,5 +1,5 @@
 .subscribe {
-  color: var(--black-basic);
+  color: var(--black-basic, #000000);
   font-family: $font-secondary;
 }
 

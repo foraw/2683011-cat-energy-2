@@ -1,15 +1,41 @@
 .programs__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .programs__item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+
   &::before {
     content: "";
     display: block;
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: var(--color-prime) no-repeat center;
+    background: var(--color-prime, #68b738) no-repeat center;
     background-size: 70px 50px;
 
     @media (min-width: $tablet-width) {

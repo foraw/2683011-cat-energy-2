@@ -1,7 +1,7 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 :root {
   --color-prime: #68b738;
-  --color-prime-85: rgba(104, 183, 56, 0.85);
+  --color-prime-shade: rgba(104, 183, 56, 0.85);
   --white-basic: #ffffff;
   --black-basic: #000000;
   --grey-basic: #f2f2f2;
@@ -19,10 +19,12 @@ body {
   font-family: $font-primary;
   font-size: 14px;
   line-height: 18px;
-  color: var(--color-text);
-  background-color: var(--white-basic);
-  margin: 0;
-  padding: 0;
+  color: var(--color-text, #444444);
+  background-color: var(--white-basic, #ffffff);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-inline: auto;
 }
 
 img {
