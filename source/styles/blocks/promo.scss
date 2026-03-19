@@ -37,14 +37,6 @@
   }
 }
 
-.promo__title, .promo__slogan {
-  color: var(--white-basic);
-
-  @media (min-width: $tablet-width) {
-    color: var(--black-basic);
-  }
-}
-
 .promo__slogan {
   font-family: $font-secondary;
   font-size: 14px;

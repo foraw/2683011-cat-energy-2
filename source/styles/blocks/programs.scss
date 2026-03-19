@@ -63,39 +63,3 @@
     background-image: url("../../icons/program-2.svg");
   }
 }
-
-.programs__item {
-  &::before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: var(--color-prime) no-repeat center;
-    background-size: 70px 50px;
-
-    @media (min-width: $tablet-width) {
-      width: 200px;
-      height: 200px;
-      background-size: 200px 113px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100px;
-      height: 100px;
-      background-size: 100px 56px;
-    }
-  }
-}
-
-.programs__item--slim {
-  &::before {
-    background-image: url("../../icons/program-1.svg");
-  }
-}
-
-.programs__item--pro {
-  &::before {
-    background-image: url("../../icons/program-2.svg");
-  }
-}
