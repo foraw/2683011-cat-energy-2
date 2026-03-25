@@ -1,12 +1,13 @@
 .features {
   display: flex;
   flex-direction: column;
+  padding-block-end: 33px;
 }
 
 .features__list {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 26px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -23,14 +24,18 @@
 
 .features__title {
   line-height: 40px;
+  margin: 0;
+  margin-block-end: 42px;
 
   @media (min-width: $tablet-width) {
     line-height: 1;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .features__text {
+.features__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -38,8 +43,9 @@
 
 .features__item {
   display: flex;
+  position: relative;
   flex-direction: column;
-  width: 280px;
+  margin-inline-start: 80px;
 
   @media (min-width: $tablet-width) {
     width: 245px;
@@ -48,6 +54,9 @@
   &::before {
     content: "";
     display: block;
+    position: absolute;
+    top: -2px;
+    left: -80px;
     width: 60px;
     height: 60px;
     background: #5eaa2f no-repeat center;

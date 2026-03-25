@@ -1,7 +1,14 @@
+.accessories {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
 .accessories__title {
   color: var(--color-title, #000000);
   font-size: 24px;
   line-height: 1;
+  margin-block: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -13,5 +20,9 @@
 }
 
 .accessories__list {
+  display: grid;
+  row-gap: 12px;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }

@@ -32,6 +32,7 @@
 .stats__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px 32px;
   list-style-type: none;
   margin: 0;
@@ -45,14 +46,19 @@
 
 .stats__title {
   line-height: 40px;
+  margin: 0;
+  margin-block: 25px;
 
   @media (min-width: $tablet-width) {
     line-height: 1;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .stats__text {
+.stats__text {
+  margin: 0;
+  margin-block: 15px 20px;
+
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -71,7 +77,8 @@
 
 .stats__item--additional {
   flex-direction: row;
-  width: 188px;
+  flex-basis: fit-content;
+  gap: 4px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;

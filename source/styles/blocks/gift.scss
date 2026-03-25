@@ -1,6 +1,7 @@
 .gift {
   width: 280px;
-  background: linear-gradient(var(--color-prime-shade, rgba(104, 183, 56, 0.85)), var(--color-prime-shade, rgba(104, 183, 56, 0.85))), url("../../images/background/gift-bg-mobile@1x.jpg") no-repeat center / contain;
+  margin-top: 25px;
+  background: url("../../images/gift-cat-mobile@1x.jpg") no-repeat center / contain;
 
   &::before {
     content: "";

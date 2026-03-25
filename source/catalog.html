@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav">
+  <header class="header container">
+    <div class="header__logo-wrapper">
       <div class="logo logo--extra">
         <a class="logo__link" href="index.html">
           <picture>
@@ -33,12 +33,14 @@
       <button class="button-toggle" type="button">
         <span class="visually-hidden">Переключение меню</span>
       </button>
+    </div>
+    <nav class="nav nav--closed">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--current" href="#" aria-current="page">Каталог продукции</a>
+          <a class="nav__link nav__link--current" href="catalog.html" aria-current="page">Каталог продукции</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#">Подбор программы</a>
@@ -47,7 +49,7 @@
     </nav>
   </header>
   <main class="main">
-    <section class="catalog">
+    <section class="catalog container">
       <h1 class="catalog__title heading">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item card">
@@ -213,7 +215,7 @@
         </li>
       </ul>
     </section>
-    <section class="accessories">
+    <section class="accessories container">
       <h2 class="accessories__title heading">Дополнительные товары</h2>
       <ul class="accessories__list">
         <li class="accessories__item card card--mini">
@@ -222,7 +224,7 @@
           </a>
           <dl class="card__list card__list--mini">
             <dt class="visually-hidden">Масса</dt>
-            <dd class="card__description">1&nbsp;упаковка (100&nbsp;г)</dd>
+            <dd class="card__description card__description--accent">1&nbsp;упаковка (100&nbsp;г)</dd>
             <dt class="visually-hidden">Цена</dt>
             <dd class="card__description">200&nbsp;₽</dd>
           </dl>
@@ -230,11 +232,11 @@
         </li>
         <li class="accessories__item card card--mini">
           <a class="card__link" href="#">
-            <p class="card__title">Питьевая вода</p>
+            <p class="card__title">Питьевая&nbsp;вода</p>
           </a>
           <dl class="card__list card__list--mini">
             <dt class="visually-hidden">Объём</dt>
-            <dd class="card__description">5&nbsp;литров</dd>
+            <dd class="card__description card__description--accent">5&nbsp;литров</dd>
             <dt class="visually-hidden">Цена</dt>
             <dd class="card__description">50&nbsp;₽</dd>
           </dl>
@@ -246,7 +248,7 @@
           </a>
           <dl class="card__list card__list--mini">
             <dt class="visually-hidden">Объём</dt>
-            <dd class="card__description">1&nbsp;литр</dd>
+            <dd class="card__description card__description--accent">1&nbsp;литр</dd>
             <dt class="visually-hidden">Цена</dt>
             <dd class="card__description">100&nbsp;₽</dd>
           </dl>
@@ -258,7 +260,7 @@
           </a>
           <dl class="card__list card__list--mini">
             <dt class="visually-hidden">Масса</dt>
-            <dd class="card__description">1&nbsp;упаковка (30&nbsp;г)</dd>
+            <dd class="card__description card__description--accent">1&nbsp;упаковка (30&nbsp;г)</dd>
             <dt class="visually-hidden">Цена</dt>
             <dd class="card__description">300&nbsp;₽</dd>
           </dl>
@@ -269,7 +271,7 @@
         <p class="gift__text">Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
       </div>
     </section>
-    <section class="subscribe">
+    <section class="subscribe container">
       <h2 class="subscribe__title heading">Акции и новинки</h2>
       <p class="subscribe__text">Подпишитесь на&nbsp;наши новости и&nbsp;не&nbsp;пропустите ни&nbsp;одного предложения!</p>
       <form class="subscribe__form form" action="https://echo.htmlacademy.ru/" method="post">

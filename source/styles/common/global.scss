@@ -21,8 +21,8 @@ body {
   line-height: 18px;
   color: var(--color-text, #444444);
   background-color: var(--white-basic, #ffffff);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template: auto 1fr auto / 1fr;
   min-height: 100vh;
   margin-inline: auto;
 }
@@ -30,4 +30,5 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
