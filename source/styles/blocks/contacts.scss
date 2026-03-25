@@ -1,7 +1,7 @@
 .contacts__description-wrapper {
   display: flex;
   align-items: center;
-  column-gap: 16px;
+  padding-block: 6px;
 
   @media (min-width: $tablet-width) {
     column-gap: 308px;
@@ -19,6 +19,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -30,6 +31,8 @@
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
+  min-width: 140px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
