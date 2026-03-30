@@ -16,15 +16,3 @@
     padding-block: 42px 40px;
   }
 }
-
-.programs__item--slim {
-  &::before {
-    background-image: url("../../icons/program-1.svg");
-  }
-}
-
-.programs__item--pro {
-  &::before {
-    background-image: url("../../icons/program-2.svg");
-  }
-}
