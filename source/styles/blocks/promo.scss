@@ -61,6 +61,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .promo__title  {
+   width: 414px;
+  }
+}
+
 .promo__slogan {
   font-family: $font-secondary;
   font-size: 14px;
