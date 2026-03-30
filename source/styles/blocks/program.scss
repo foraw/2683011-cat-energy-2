@@ -51,8 +51,8 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin-inline-start: 70px;
-  margin-block: 10px;
+  margin: 0;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -66,8 +66,9 @@
 }
 
 .program__text {
+  grid-column: 1 / -1;
   margin: 0;
-  padding-block: 19px 40px;
+  padding-block: 22px 40px;
 
   @media (min-width: $tablet-width) {
     color: var(--black-basic, #000000);
@@ -88,7 +89,7 @@
   background-color: inherit;
   line-height: 16px;
   text-align: start;
-  min-width: 139px;
+  grid-column: 1 / -1;
   padding-block: 2px;
 
   @media (min-width: $tablet-width) {
