@@ -1,28 +1,86 @@
 .program {
   background-color: var(--grey-basic, #f2f2f2);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: auto auto auto;
+    column-gap: 53px;
+    padding: 55px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    column-gap: 62px;
+    padding: 47px 52px 57px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--color-prime, #68b738) no-repeat center;
+    background-size: 70px 50px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      background-size: 200px 113px;
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      margin-block-start: 37px;
+      margin-inline-end: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      background-size: 100px 56px;
+      grid-column: auto;
+      grid-row: auto;
+      margin: 0;
+    }
+  }
 }
 
 .program__title {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin-inline-start: 70px;
-  margin-block: 10px;
+  margin: 0;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding-block: 22px 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
 .program__text {
+  grid-column: 1 / -1;
   margin: 0;
-  padding-block: 19px 40px;
+  padding-block: 22px 40px;
 
   @media (min-width: $tablet-width) {
     color: var(--black-basic, #000000);
     font-size: 16px;
     line-height: 24px;
+    grid-column: auto;
+    padding-block: 12px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    padding-block: 39px 25px;
   }
 }
 
@@ -31,11 +89,16 @@
   background-color: inherit;
   line-height: 16px;
   text-align: start;
-  min-width: 139px;
+  grid-column: 1 / -1;
   padding-block: 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    grid-column: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
   }
 }
