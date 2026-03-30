@@ -3,10 +3,10 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
-  height: 34px;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    justify-self: end;
+    width: 163px;
   }
 }
 

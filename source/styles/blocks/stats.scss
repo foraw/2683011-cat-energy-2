@@ -1,8 +1,10 @@
 .stats {
   background-color: #eaeaea;
+  padding-block-end: 40px;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, var(--white-basic, #ffffff) 55%, #eaeaea 55%);
+    background: linear-gradient(to bottom, var(--white-basic, #ffffff) 57.26%, #eaeaea 57.26%);
+    padding-block-end: 101px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,6 +15,11 @@
 .stats__container {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 99px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -38,6 +45,11 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    column-gap: 43px;
+  }
+
   @media (min-width: $desktop-width) {
     gap: 55px 42px;
     width: 366px;
@@ -51,6 +63,7 @@
 
   @media (min-width: $tablet-width) {
     line-height: 1;
+    margin-block: 45px;
   }
 }
 
@@ -61,6 +74,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-block: 15px 55px;
   }
 }
 
@@ -81,15 +95,17 @@
   gap: 4px;
 
   @media (min-width: $tablet-width) {
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     width: 174px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 327px;
+    flex-direction: row;
+    gap: 63px;
+    margin: 0;
   }
 }
 
@@ -97,10 +113,14 @@
   order: 2;
   font-size: 12px;
   line-height: 12px;
+  text-transform: lowercase;
+  text-align: center;
+  width: 80px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    width: 130px;
   }
 }
 
@@ -111,10 +131,12 @@
   line-height: 24px;
   text-transform: uppercase;
   margin: 0;
+  padding-block: 14px 8px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding-block: 15px 11px;
   }
 }
 
@@ -125,6 +147,8 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  width: fit-content;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -135,7 +159,6 @@
   order: 0;
 }
 
-.stats__slide-wrapper {
-  display: flex;
-  flex-direction: column;
+.stats__image {
+  margin-inline: auto;
 }
